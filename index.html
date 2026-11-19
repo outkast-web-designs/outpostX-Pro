@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0F4D3A">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<title>OutpostX</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="top" id="top">
+  <img class="logo" src="icons/icon-192.png" alt="">
+  <h1 id="pageTitle">OutpostX</h1>
+  <button id="refresh" class="icon" type="button" aria-label="Refresh">&#8635;</button>
+</header>
+<main id="main" tabindex="-1"></main>
+<nav class="tabs" id="tabs" aria-label="Main">
+  <button data-tab="today" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11l8-7 8 7v9a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"/></svg><span>Today</span></button>
+  <button data-tab="campaigns" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12l18-8-7 18-3-8z"/></svg><span>Campaigns</span></button>
+  <button data-tab="replies" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg><span>Replies</span><i class="dot" id="repDot" hidden></i></button>
+  <button data-tab="tenders" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h5"/></svg><span>Tenders</span></button>
+  <button data-tab="more" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="18" cy="12" r="1.6"/></svg><span>More</span></button>
+</nav>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>
